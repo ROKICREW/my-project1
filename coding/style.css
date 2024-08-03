@@ -1,0 +1,213 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color:white;
+    color: black;
+    padding: 15px;
+}
+#home{
+    
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 7rem;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+}
+.nav__links  {
+     list-style: none;
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+  
+  .nav__links a:hover {
+    color: orangered;
+  }
+  
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.audio{
+    color: black;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    font-size:x-large;
+    
+}
+
+.box{
+   
+   border-color:red;
+    border-width:2px;
+    border-style: solid;
+    display: inline-block;
+    width: 310px;
+    height: 180px;
+    text-align: center;
+}
+.djvideos{
+    margin-top: 33%;
+    text-align: center;
+}
+.box1{
+   
+    border-color:blue;
+     border-width:3px;
+     border-style: solid;
+     display: inline-block;
+     width: 350px;
+     height: 350px;
+     text-align: center;
+     
+ }
+ .images{
+    text-align: center;
+    padding: 20%;
+}
+.box2{
+   
+    border-color:blue;
+     border-width:3px;
+     border-style: solid;
+     display: inline-block;
+     width:400px;
+     height: 350px;
+     
+     
+ }
+ .setup{
+    text-align: center;
+}
+.reg{
+    text-align: center;
+    background-color: aquamarine;
+    border-style:groove;
+    border-color: #444;
+}
+.booking{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.subres{
+   
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    hover {
+        background-color: #444;
+    }
+}
+
+.inclusion{
+background-color: whitesmoke;
+width: auto;
+padding: 0%;
+margin-top: 0%;
+}
+.three{
+   padding-right:800px;
+   padding-left: 150px;
+    color: red;
+}
+.points{
+ 
+    padding-left:350px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+
+.expect{
+    background-color: whitesmoke;
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+    }
+.four{
+    padding-right:800px;
+    padding-left: 150px;
+     color: red;
+ }
+ .points1{
+     padding-left:350px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: whitesmoke;
+    
+}
+
+
+.dj{
+    background-color: whitesmoke;
+    font-family:sans-serif;
+    font: weight 450px;;
+    margin: 0px;
+    padding: 0px;
+}
+.contact{
+    background-color:whitesmoke;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     text-align: center; 
+     
+     margin: 0px;
+    padding: 20px;
+}
+.rating{
+    background: var(--white);
+    padding: 2rem;
+    max-width: 576px;
+    border-style: solid;
+    border-color: silver;
+    border-radius: .75rem;
+    text-align: center;
+    margin-left: 30%;
+}
+.rating header{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.rating .Stars{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.Stars span{
+    cursor: pointer;
+    font-size: 30px;
+    transition: color 0.2s ease;
+}
+.Stars span.active{
+    color: lightgreen;
+}
+textarea{
+    width: 100%;
+    background: var(--light);
+    padding: 1rem;
+    margin-top: 5%;
+    resize: none;
+}
+.btn{
+    display: flex;
+    gap: .70rem;
+    margin-left: 23%;
+    margin-top: 2%;
+}
