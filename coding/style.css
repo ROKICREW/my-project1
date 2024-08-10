@@ -8,7 +8,7 @@ nav{
     color: black;
     padding: 15px;
 }
-#home{
+.home{
     
     color: white;
     margin-bottom: 2rem;
@@ -233,7 +233,7 @@ textarea{
     color: white;
     font-size: 3rem;
     padding: 10%;
-    font-weight: 900;
+    font-weight: 800;
     font-family:sans-serif;
     -webkit-text-stroke: 4px black;
 }
@@ -281,16 +281,19 @@ textarea{
     margin-left: 40%;
     margin-top: 5%;
 }
-.imgs{
+.imgs2{
     border-color:orange;
     border-width:3px;
     border-style: solid;
     display:inline-block;
     width: 400px;
     height: 350px;
-    text-align: center;
+}
+div .imgs2:hover{
+    transform: scale(1.03);
 }
 .imgpg{
-    padding: 50px;
+    padding: 100px;
+    margin-left: 50px;
     margin-top: 20px;
 }
