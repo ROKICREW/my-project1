@@ -132,12 +132,12 @@ padding: 0%;
 margin-top: 0%;
 }
 .three{
-   padding-right:800px;
-   padding-left: 150px;
+   padding-right:1210px;
+   padding-left: 50px;
     color: red;
 }
 .points{
- 
+     text-align: justify;
     padding-left:350px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
@@ -150,8 +150,8 @@ margin-top: 0%;
     padding: 0%;
     }
 .four{
-    padding-right:800px;
-    padding-left: 150px;
+    padding-right:1220px;
+    padding-left: 50px;
      color: red;
  }
  .points1{
@@ -171,7 +171,6 @@ margin-top: 0%;
     text-align: justify ;
     color: white;
     margin-top:2%;
-    text-align: justify;
 }
 .contact{
     background-color:black;
