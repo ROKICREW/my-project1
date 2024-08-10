@@ -20,15 +20,16 @@ nav{
     -webkit-text-stroke: 2px black;
 }
 .nav__links  {
-     list-style: none;
-    color: var(--text-light);
+    list-style: none;
+    color: black;
     transition: 0.3s;
+    text-decoration: none;
   }
   
   .nav__links a:hover {
     color: orangered;
   }
-  
+
 html,
 body {
   scroll-behavior: smooth;
@@ -74,6 +75,9 @@ body {
     text-align: center;
     padding: 20%;
 }
+.setup{
+    text-align: center;
+}
 .box2{
    
     border-color:blue;
@@ -82,11 +86,13 @@ body {
      display: inline-block;
      width:400px;
      height: 350px;
-     
-     
- }
- .setup{
-    text-align: center;
+     transition: 400ms;
+     cursor: pointer;
+}
+div .box2:hover{
+   filter: grayscale(1);
+   transform: scale(1.03);
+  
 }
 .reg{
     text-align: center;
@@ -95,15 +101,14 @@ body {
     border-color: #444;
 }
 .booking{
-    max-width: 500px;
+    max-width: 567px;
     margin: 40px auto;
     padding: 20px;
     background-color: #fff;
     border: 1px solid grey;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .subres{
-   
+
     padding: 10px;
     margin-bottom: 20px;
     color: #fff;
@@ -115,9 +120,13 @@ body {
         background-color: #444;
     }
 }
+.table,tr,td{
+   
+    padding: 10px;
+}
 
 .inclusion{
-background-color: whitesmoke;
+background-color: white;
 width: auto;
 padding: 0%;
 margin-top: 0%;
@@ -131,11 +140,11 @@ margin-top: 0%;
  
     padding-left:350px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .expect{
-    background-color: whitesmoke;
+    background-color: white;
     width: auto;
     margin: 0%;
     padding: 0%;
@@ -146,29 +155,35 @@ margin-top: 0%;
      color: red;
  }
  .points1{
-     padding-left:350px;
+     padding-left:330px;
+     text-align: justify;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     background-color: whitesmoke;
-    
+     background-color: white;
+    width: 1500px;
 }
 
 
 .dj{
-    background-color: whitesmoke;
+    background-color: black;
     font-family:sans-serif;
-    font: weight 450px;;
-    margin: 0px;
-    padding: 0px;
+    font: weight 450px;
+    padding-left: 5%;
+    text-align: justify ;
+    color: white;
+    margin-top:2%;
+    text-align: justify;
 }
 .contact{
-    background-color:whitesmoke;
-    color: black;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:black;
+    color: white;
      text-align: center; 
-     
      margin: 0px;
     padding: 20px;
+    hover {
+        background-color: #444;
+    }
 }
+
 .rating{
     background: var(--white);
     padding: 2rem;
@@ -178,6 +193,8 @@ margin-top: 0%;
     border-radius: .75rem;
     text-align: center;
     margin-left: 30%;
+    color:red;
+    margin-top: 3%;
 }
 .rating header{
     font-size: 20px;
@@ -189,6 +206,7 @@ margin-top: 0%;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    color:grey;
 }
 .Stars span{
     cursor: pointer;
@@ -200,14 +218,80 @@ margin-top: 0%;
 }
 textarea{
     width: 100%;
-    background: var(--light);
+    background:white;
     padding: 1rem;
     margin-top: 5%;
     resize: none;
+   
 }
 .btn{
     display: flex;
     gap: .70rem;
     margin-left: 23%;
     margin-top: 2%;
+}
+.djhome{
+    color: white;
+    font-size: 3rem;
+    padding: 10%;
+    font-weight: 900;
+    font-family:sans-serif;
+    -webkit-text-stroke: 4px black;
+}
+.roki{
+    text-align: center;
+    margin-top: 30px;
+}
+.choose-us{
+    text-align: justify;
+    color:darkblue;
+    width: 1200px;
+    margin-top: -12%;
+    padding-left: 25%;
+}
+.about2{
+    margin-top: 20px;
+    padding: 40px;
+    margin-left: 40px;
+    
+}
+.ab{
+    background-color:pink;
+    width: 270px;
+    height: 800px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.img1{
+    border-color:blue;
+    border-width:3px;
+    border-style: solid;
+    display: inline-block;
+    width:350px;
+    height: 350px;
+    cursor: pointer;
+}
+.imgs{
+    margin-top: 40px;
+    margin-left: 15%;
+}
+.ad1{
+    background-color:pink;
+    width: 270px;
+    height: 800px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.imgs{
+    border-color:orange;
+    border-width:3px;
+    border-style: solid;
+    display:inline-block;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+}
+.imgpg{
+    padding: 50px;
+    margin-top: 20px;
 }
