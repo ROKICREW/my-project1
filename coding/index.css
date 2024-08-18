@@ -1,8 +1,0 @@
-.sample{
-    text-align: center;
-}
-@media screen and(min-width:600px) {
-    .sample{
-        color: red;
-    }
-}
