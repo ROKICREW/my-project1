@@ -1,15 +1,16 @@
 *{
     margin: 0%;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
 }
-nav{
-    background-color:white;
-    color: black;
-    padding: 15px;
-}
-.home{
-    
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  .homebg{
+    background-repeat:no-repeat;
+    background-size: 1520px;
+  }
+  .home{
     color: white;
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -19,33 +20,45 @@ nav{
     text-transform: uppercase;
     -webkit-text-stroke: 2px black;
 }
-.nav__links  {
-    list-style: none;
-    color: black;
-    transition: 0.3s;
+nav{
+    background-color: white;
+    font-size:20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav a{
     text-decoration: none;
-  }
-  
-  .nav__links a:hover {
+}
+nav a:hover {
     color: orangered;
   }
-
+.logo{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color:goldenrod;
+    margin-bottom: 3px;
+}
+.showmenu{
+    display: block;
+}
 html,
 body {
   scroll-behavior: smooth;
 }
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-.audio{
-    color: black;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1px white;
-    font-size:x-large;
-    
-}
-
 .box{
    
    border-color:red;
@@ -70,6 +83,9 @@ body {
      height: 350px;
      text-align: center;
      
+ }
+ .box1 a{
+    text-decoration: none;
  }
  .images{
     text-align: center;
@@ -101,10 +117,10 @@ div .box2:hover{
     border-color: #444;
 }
 .booking{
-    max-width: 567px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color:cornsilk;
     border: 1px solid grey;
 }
 .subres{
@@ -125,52 +141,33 @@ div .box2:hover{
     padding: 10px;
 }
 
-.inclusion{
+.points{
 background-color: white;
 width: auto;
 padding: 0%;
 margin-top: 0%;
 }
-.three{
+.heading{
    padding-right:1210px;
    padding-left: 50px;
     color: red;
 }
-.points{
-     text-align: justify;
-    padding-left:350px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
-}
-
-.expect{
-    background-color: white;
-    width: auto;
-    margin: 0%;
-    padding: 0%;
-    }
-.four{
-    padding-right:1220px;
-    padding-left: 50px;
-     color: red;
- }
- .points1{
-     padding-left:330px;
-     text-align: justify;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     background-color: white;
-    width: 1500px;
-}
-
-
+    
+.points1{
+       padding: 25px;
+       padding-left: 25%;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       background-color: white;
+       font-size: larger;
+   }
 .dj{
     background-color: black;
     font-family:sans-serif;
-    font: weight 450px;
-    padding-left: 5%;
+    padding-left:20px;
     text-align: justify ;
     color: white;
     margin-top:2%;
+    width: 100%;
 }
 .contact{
     background-color:black;
@@ -178,6 +175,10 @@ margin-top: 0%;
      text-align: center; 
      margin: 0px;
     padding: 20px;
+  
+}
+.contact a{
+    text-decoration: none;
     hover {
         background-color: #444;
     }
@@ -194,6 +195,47 @@ margin-top: 0%;
     margin-left: 30%;
     color:red;
     margin-top: 3%;
+}
+.wrapper{
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-left: 50px;
+}
+.wrapper .input-box{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.wrapper .input-box input{
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    border-color: greenyellow;
+    border-bottom: 2px solid greenyellow;
+    font-size: 17px;
+   
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    transform: translateY(-30px);
+    font-size: 15px;
+}
+.wrapper .input-box label{
+    position: absolute;
+    bottom: 10px;
+    right: 0%;
+    color: gray;
+    pointer-events: none;
+    margin-right: 80%;
+    transition: all 0.3s ease;
+}
+.wrapper .input-box label .underline{
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
 }
 .rating header{
     font-size: 20px;
@@ -223,11 +265,18 @@ textarea{
     resize: none;
    
 }
-.btn{
-    display: flex;
-    gap: .70rem;
-    margin-left: 23%;
-    margin-top: 2%;
+.btn-submit{
+    margin-left: 2%;
+    margin-top: 5%;
+    width: 140px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    hover {
+        background-color: #444;
+    }
 }
 .djhome{
     color: white;
@@ -237,6 +286,10 @@ textarea{
     font-family:sans-serif;
     -webkit-text-stroke: 4px black;
 }
+.himg{
+    padding-left: 37%;
+    margin-top: 20%;
+}
 .roki{
     text-align: center;
     margin-top: 30px;
@@ -244,9 +297,9 @@ textarea{
 .choose-us{
     text-align: justify;
     color:darkblue;
-    width: 1200px;
+    width: 100%;
     margin-top: -12%;
-    padding-left: 25%;
+    padding-left: 20px;
 }
 .about2{
     margin-top: 20px;
@@ -258,8 +311,15 @@ textarea{
     background-color:pink;
     width: 270px;
     height: 800px;
+    text-align: justify;
     margin-left: 40%;
     margin-top: 5%;
+    padding-top: 10px;
+}
+.txt{
+    width: 200px;
+    text-align: justify;
+    margin-left: 10%;
 }
 .img1{
     border-color:blue;
@@ -269,6 +329,14 @@ textarea{
     width:350px;
     height: 350px;
     cursor: pointer;
+}
+.ab1{
+    background-color:mediumblue;
+    color: white;
+    text-align: justify;
+     width: 400px;
+     margin-left: 35%;
+     margin-top: 10%;
 }
 .imgs{
     margin-top: 40px;
@@ -297,3 +365,138 @@ div .imgs2:hover{
     margin-left: 50px;
     margin-top: 20px;
 }
+@media screen and (max-width:600px) {
+nav{
+    flex-direction: column;
+}
+nav li{
+    display: block;
+    padding: 10px 0;
+}
+ul{
+    text-align: center;
+    padding: 0px;
+    display:none;
+}
+.logo{
+    align-self:flex-start;
+    margin: 10px 0px 0px;
+}
+.menu{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+.home{
+    margin-bottom: 1rem;
+    font-size:large;
+   line-height: 4rem;
+}
+.hdj{
+    padding: 20px;
+}
+.box1{
+    margin-top: 20px;
+}
+.rating{
+    margin-left: 22px;
+    max-width: 500px;
+}
+.wrapper{
+    margin-left: 20px;
+}
+.himg{
+    padding: 60px;
+    margin-top: 50px;   
+}
+.homebg{
+    background-size: 950px;
+}
+.djhome{
+    padding-left: 3px;
+}
+.ab{
+   margin-left: 80px;
+}
+.ab1{
+    padding-left: 20px;
+    margin-left: 55px;
+}
+.ad1{
+   margin-left: 180px;
+}
+.imgpg{
+    padding-left: 40px;
+}
+}
+@media screen and (max-width:800px) {
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0px;
+        display:none;
+    }
+    .logo{
+        align-self:flex-start;
+        margin: 10px 0px 0px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .home{
+        margin-bottom: 1rem;
+        font-size:large;
+       line-height: 4rem;
+    }
+    .box1{
+        margin-top: 50px;
+        display: block;
+        margin-left: 0px;  
+    }
+    .rating{
+        margin-left: 40px;
+        max-width: 400px;
+    }
+    .wrapper{
+        margin-left: 0px;
+        width: 350px;
+    }
+    .himg{
+        padding: 60px;
+        margin-top: 50px;
+        margin-left: 0px;   
+    }
+    .homebg{
+        background-size: 950px;
+    }
+    .djhome{
+        padding-left: 3px;
+    }
+    .ab{
+       margin-left: 15px;
+    }
+    .imgs{
+        margin-left: 5px;
+    }
+    .ab1{
+        padding-left: 20px;
+        margin-left: 1px;
+    }
+    .ad1{
+       margin-left: 100px;
+    }
+    .imgpg{
+        padding-left: 1px;
+    }
+    }
+ 

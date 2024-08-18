@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title>ROKI DJ</title>
+    <title>RAAKI DJ</title>
     <link rel="icon" href="D:\Dj booking\my-project1\images\ed7f012c1ac048eac261d1ae48bb72d5.jpg">
     <link rel="stylesheet" href="D:\Dj booking\my-project1\coding\style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
 </head>  
-    <body background="D:\Dj booking\my-project1\images\Best-DJ-setups-for-different-events-1-1024x683.jpg" style="background-repeat:no-repeat;background-size: 1520px;">
-    <div class="navbar">
+    <body class="homebg" background="D:\Dj booking\my-project1\images\Best-DJ-setups-for-different-events-1-1024x683.jpg">
     <nav>
-    <h1 style=" background-color:black;
-            color:floralwhite;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-            display:inline;  
-            border-radius: 100%;
-            height: 300px;
-            width: 300px; 
-            border:8px double black;"> ROKI CREW </h1>
-<ul class="nav__links" style="display: inline; margin-left: 57%;">
-              
-                <li class="fa fa-home" style="display: inline;"><a href="home.html">Home |</a></li>
-                <li class="fa fa-" style="display: inline;"><a href="images.html">Images |</a></li>
-                <li class="fa fa-event" style="display: inline;"><a href="#Booking">Booking |</a></li>
-                <li class="fa fa-address-card" style="display: inline;"><a href="About.html">About Us |</a></li>
-                <li class="fa fa-phone" style="display: inline;"><a href="#Contact us">Contact Us</a></li>
-               
-            </ul>
-            </nav>  
+        <div class="logo">
+            <h1>RAAKI CREW </h1>
         </div>
+        <ul>
+            <li><a href="home.html">Home </a></li>
+            <li><a href="images.html">Gallery </a></li>
+            <li><a href="dj event.html #Booking">Booking </a></li>
+            <li><a href="About.html">About </a></li>
+            <li><a href="#Contact us">Contact Us</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    
         <div class="home">
             <h1>The Perfect<br />Party For You</h1><h1 style="text-align:right;padding: 35px;padding-top: 100px;">LET'S VIBE<br />GUYS</h1>
         </div>
         <div class="djvideos">
             <center>
-                <h1  style="color:greenyellow;">DJ Booking For All Events🎧🎛️</h1>
+                <h1 class="hdj" style="color:greenyellow;">DJ Booking For All Events🎧🎛️</h1>
                 <p style="color:black">DJ Party Is Available For All Events </p>
                 </center>
                 <br>
@@ -56,7 +53,6 @@
         <source src="D:\Dj booking\my-project1\images\video_20240629_135400_edit.mp4" type="video/mp4">
     </video>
 </div>
-<h2 class=audio>SK ARUL AUDIO CREW</h2>
 <br>
 <div class="images">
     <div class="box1" style="margin-top: -20%;">
@@ -99,17 +95,24 @@
 </div>
 <div class="booking">
 <header id="Booking">
-<h2 class="reg">Booking Now</h2>
+<h2 class="reg">BOOK NOW</h2>
 <center>
 <form>
     <table>
         <tr>
-            <td><input type="text" placeholder="Enter your name" name="name" style="width: 200px; height:25px ;"></td>
+            <td>NAME:</td>
+            <td><input type="text" placeholder="Enter Your Name" name="name" style="width: 200px; height:25px ;"></td>
         </tr> <br>
         <tr>
-            <td><input type="number" placeholder="Enter your mobile number" name="phone"  style="width: 200px; height:25px ;"></td>
+            <td>MOBILE Number:</td>
+            <td><input type="text" placeholder="Enter Your Mobile Number" name="phone"  style="width: 200px; height:25px ;"></td>
         </tr>
         <tr>
+            <td>MAIL-ID:</td>
+            <td><input type="text" placeholder="Enter Your Mail-Id" name="Mail-Id"  style="width: 200px; height:25px ;"></td>
+        </tr>
+        <tr>
+            <td>EVENTS:</td>
             <td>
             <select>
                 <option>--Select Option--</option>
@@ -123,14 +126,16 @@
             </td>
         </tr>
         <tr>
+            <td>LOCATION:</td>
             <td><input type="text"id="location"name="location" placeholder="Location"  style="width: 200px; height:25px ;"></td>
         </tr>
-    </table>
-    <table>
         <tr>
+            <td>DATE:</td>
             <td><input type="date" placeholder="Event date" name="date" style="width: 200px; height:25px ;" ></td>
+            <tr>
+            <td>TIME:</td>
             <td><input type="time" placeholder="Event time" name="time" style="width: 200px; height:25px ;"></td>
-          
+            </tr>
         </tr>
     </table>
     <table>
@@ -144,39 +149,39 @@
 </header>
 </div>
 </center>
-<div class="inclusion">
+<div class="points">
    
-    <h1 class="three">Inclusions</span></h1>
+    <h1 class="heading">Inclusions</h1>
 
-    <h4 class="points">
+    <h4 class="points1" style="text-align: justify;">
      
-        <li style="color: black;cursor:default;">The Artist has been in this field for 5 years</li>
+        <li>The Artist has been in this field for 5 years</li>
          <br>
-        <li style="color: black;cursor:default;">The Artist has been in this field for 5 years</li>
+        <li>The Artist has been in this field for 5 years</li>
         <br>
-        <li style="color: black;cursor:default;">Artist will arrive 1 Hrs before the party begins</li>
+        <li>Artist will arrive 1 Hrs before the party begins</li>
         <br>
-        <li style="color: black;cursor:default;">The artist will perform for 3 Hrs</li>
+        <li>The artist will perform for 3 Hrs</li>
         <br>
-        <li style="color: black;cursor:default;">The sound system part of the package: Yes</li>
+        <li>The sound system part of the package: Yes</li>
         <br>
-        <li style="color: black;cursor:default;">Requirements needed at the venue are: Plug Point</li>
+        <li>Requirements needed at the venue are: Plug Point</li>
         <br>       
-        <li style="color: black;cursor:default;">Extra charges for additional duration: Yes</li>
+        <li>Extra charges for additional duration: Yes</li>
         
     </h4>
 </div>
-<div class="expect">
+<div class="points">
     
-    <h1 class="four">Expect</span></h1>
+    <h1 class="heading">Expect</h1>
 
-    <h4 class="points1">
+    <h4 class="points1" style="text-align: justify;">
       
-        <li style="color: black;cursor:default;">Every wedding party deserves a DJ service that can entertain the guests and make everyone groove to the most amazing beats, adding to the infinite memories and bonds that can be created during a wedding in goa. PartyOne offers DJ services for your budget to rock the dance floor during any wedding function you desire.</li>
+        <li>Every wedding party deserves a DJ service that can entertain the guests and make everyone groove to the most amazing beats, adding to the infinite memories and bonds that can be created during a wedding in goa. PartyOne offers DJ services for your budget to rock the dance floor during any wedding function you desire.</li>
         <br>
-        <li style="color: black;cursor:default;">We have highly experienced DJs who play the latest trendy tracks that every guest can enjoy. Our wedding DJ will make every guest, from a toddler to a grandfather, up and moving with their wide selection of songs. Our well-trained professionals will reach the venue an hour early to ensure timely set-up and unwanted glitches.</li>
+        <li>We have highly experienced DJs who play the latest trendy tracks that every guest can enjoy. Our wedding DJ will make every guest, from a toddler to a grandfather, up and moving with their wide selection of songs. Our well-trained professionals will reach the venue an hour early to ensure timely set-up and unwanted glitches.</li>
         <br>
-        <li style="color: black;cursor:default;">Our DJ service includes a sound system, a DJ floor, and an expert DJ who can play tracks according to your mood and requirements. With their specialised presets for every function, from Haldi to Reception, they will assist you during your entries, dance performances, and background entertainment during ceremonies. You can also request tracks or play your audio for performances smoothly with the help of our experts.</li>
+        <li>Our DJ service includes a sound system, a DJ floor, and an expert DJ who can play tracks according to your mood and requirements. With their specialised presets for every function, from Haldi to Reception, they will assist you during your entries, dance performances, and background entertainment during ceremonies. You can also request tracks or play your audio for performances smoothly with the help of our experts.</li>
    
         </h4>
 </div>
@@ -209,14 +214,24 @@
         <span class="fa fa-star fa-2x"></span>
         <span class="fa fa-star fa-2x"></span>
     </div>
+    <br>
+    <div class="wrapper">
+        <div class="input-box">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label>MAIL ID</label>
+        </div>
+    </div>
     <textarea name="comment" cols="30" rows="5" placeholder="Comment Your Feedback....!"></textarea>
     <div class="btn-group">
         <br>
-        <button type="submit" class="btn-submit"  style="width: 70px;height: 30px;">Submit</button>
-        <button class="btn-cancel" style="width: 70px;height: 30px;">Cancel</button>
+        <button type="submit" class="btn-submit">Submit Feedback</button>
     </div>
 </div>
 
-
+<div class="copyrights">
+    <p>&copy;</p>
+</div>
+    
 </body>
 </html>
