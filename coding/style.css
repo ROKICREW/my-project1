@@ -39,8 +39,8 @@ nav a:hover {
     color: orangered;
   }
 .logo{
-    font-size: 30px;
-    font-weight: bolder;
+   padding-right: 50%;
+
 }
 .menu{
     cursor: pointer;
@@ -169,21 +169,24 @@ margin-top: 0%;
     margin-top:2%;
     width: 100%;
 }
+.dj h2{
+    text-align: center;
+}
 .contact{
-    background-color:black;
-    color: white;
+    background-color:rgba(247, 212, 217, 0.911);
+    color: red;
+    font-size: 25px;
      text-align: center; 
      margin: 0px;
     padding: 20px;
-  
+}
+.contact h3{
+    color: darkorchid;
 }
 .contact a{
     text-decoration: none;
-    hover {
-        background-color: #444;
-    }
+    color: red;
 }
-
 .rating{
     background: var(--white);
     padding: 2rem;
@@ -228,7 +231,7 @@ margin-top: 0%;
     right: 0%;
     color: gray;
     pointer-events: none;
-    margin-right: 80%;
+    margin-right: 70%;
     transition: all 0.3s ease;
 }
 .wrapper .input-box label .underline{
@@ -298,7 +301,7 @@ textarea{
     text-align: justify;
     color:darkblue;
     width: 100%;
-    margin-top: -12%;
+    margin-top: 2%;
     padding-left: 20px;
 }
 .about2{
@@ -365,7 +368,18 @@ div .imgs2:hover{
     margin-left: 50px;
     margin-top: 20px;
 }
+.copyrights{
+    background-color:orchid;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px;
+    margin-top: 10px;
+}
 @media screen and (max-width:600px) {
+    .homebg{
+        overflow-x: hidden;
+    }
 nav{
     flex-direction: column;
 }
@@ -395,6 +409,9 @@ ul{
 }
 .hdj{
     padding: 20px;
+}
+.images{
+    padding-left: 70px;
 }
 .box1{
     margin-top: 20px;
@@ -427,12 +444,15 @@ ul{
    margin-left: 180px;
 }
 .imgpg{
-    padding-left: 40px;
+    padding-left: 500px;
 }
 }
 @media screen and (max-width:800px) {
+    .homebg{
+        overflow-x: hidden;
+    }
     nav{
-        flex-direction: column;
+        flex-direction:column;
     }
     nav li{
         display: block;
@@ -450,21 +470,25 @@ ul{
     .menu{
         display: block;
         position: absolute;
-        right: 20px;
+        right: 50px;
         top: 25px;
     }
     .home{
         margin-bottom: 1rem;
         font-size:large;
-       line-height: 4rem;
+        line-height: 3rem;
     }
     .box1{
         margin-top: 50px;
         display: block;
-        margin-left: 0px;  
+        margin-left: 50px;  
+    }
+    .dj p{
+        padding-right: 40px;
+        text-align: justify;
     }
     .rating{
-        margin-left: 40px;
+        margin-left: 20%;
         max-width: 400px;
     }
     .wrapper{
@@ -474,7 +498,8 @@ ul{
     .himg{
         padding: 60px;
         margin-top: 50px;
-        margin-left: 0px;   
+        margin-left: 0px;
+        padding-left: 150px;   
     }
     .homebg{
         background-size: 950px;
@@ -483,20 +508,20 @@ ul{
         padding-left: 3px;
     }
     .ab{
-       margin-left: 15px;
+       margin-left: 150px;
     }
     .imgs{
-        margin-left: 5px;
+        margin-left: 90px;
     }
     .ab1{
         padding-left: 20px;
-        margin-left: 1px;
+        margin-left: 80px;
     }
     .ad1{
-       margin-left: 100px;
+       margin-left: 200px;
     }
     .imgpg{
-        padding-left: 1px;
+        padding-left: 10px;
     }
     }
  
