@@ -2,12 +2,34 @@
 <html>
  <head>
     <title>RAAKI DJ</title>
-    <link rel="icon" href="D:\Dj booking\my-project1\images\ed7f012c1ac048eac261d1ae48bb72d5.jpg">
+    <link rel="icon" href=".\images\ed7f012c1ac048eac261d1ae48bb72d5.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail() {
+    Email.send({
+        Host : "smtp.mailendo.com",
+        Username : "username",
+        Password : "password",
+        To : 'kishorekumar200316@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Booking Confirmation",
+        Body :"Name: "+ document.getElementById("Name").value
+          + " <br> Phone: "+ document.getElementById("Phone").value
+          + "<br> Mail: "+ document.getElementById("Mail").value
+          + "<br> Events: "+ document.getElementById("Events").value
+          + "<br> Date: "+ document.getElementById("Date").value
+          + "<br> Time: "+ document.getElementById("Time").value
+    }).then(
+      message => alert("message")
+    );
+    
+}
+    </script>
 </head>  
-    <body class="homebg" background=".\images\Best-DJ-setups-for-different-events-1-1024x683.jpg">
+<body class="homebg" background=".\images\Best-DJ-setups-for-different-events-1-1024x683.jpg">
     <nav>
         <div class="logo">
             <img src=".\images\IMG_20240831_202320.png" width="100px" height="100px">
@@ -31,8 +53,8 @@
         </div>
         <div class="djvideos">
             <center>
-                <h1 class="hdj" style="color:greenyellow;">DJ Booking For All Events🎧🎛️</h1>
-                <p style="color:black">DJ Party Is Available For All Events </p>
+                <h1 class="hdj" style=" color: #00FF00;">DJ Booking For All Events</h1>
+                <p style=" color: #00FF00;">DJ Party Is Available For All Events </p>
                 </center>
                 <br>
        <div class="box">
@@ -53,23 +75,24 @@
         <source src=".\images\video_20240629_135400_edit.mp4" type="video/mp4">
     </video>
 </div>
+        </div>
 <br>
 <div class="images">
     <div class="box1" style="margin-top: -20%;">
         <h2>Wedding Party</h2>
         <img src=".\images\dj-on-rent-in-bhiwadi.webp" width="345" height="320">
-        <button style="width: 25%;height: 10%; color: black;"><a href="#Booking">Book</a></button>
+        <button><a href="home.html #Booking" style="color: white; font-size: 15px;">Book</a></button>
     </div>
     <br>
     <div class="box1" style="margin-right: 10%;margin-top: 10%;">
         <h2>Birthday Party</h2>
         <img src=".\images\dj3.webp" width="345" height="320" >
-        <button style="width: 25%;height: 10%; color: black;"><a href="#Booking">Book</a></button>
+        <button><a href="home.html #Booking" style="color: white; font-size: 15px;">Book</a></button>
     </div>
     <div class="box1">
         <h2>Private Party</h2>
         <img src=".\images\dj2.webp" width="345" height="320">
-        <button style="width: 25%;height: 10%; color: black;"><a href="#Booking">Book</a></button>
+        <button><a href="home.html #Booking" style="color: white; font-size: 15px ;">Book</a></button>
     </div>
 </div>
 <div class="setup">
@@ -95,26 +118,26 @@
 </div>
 <div class="booking">
 <header id="Booking">
-<h2 class="reg">BOOK NOW</h2>
+<h2>BOOK NOW</h2>
 <center>
 <form action="connect.php" method="post">
-    <table>
+    <table class="booking_form">
         <tr>
             <td>NAME:</td>
-            <td><input type="text" placeholder="Enter Your Name" name="Name" style="width: 200px; height:25px ;"></td>
+            <td><input type="text" placeholder="Enter Your Name" name="Name" style="width: 260px; height:40px ;"></td>
         </tr> <br>
         <tr>
             <td>MOBILE Number:</td>
-            <td><input type="text" placeholder="Enter Your Mobile Number" name="Phone"  style="width: 200px; height:25px ;"></td>
+            <td><input type="text" placeholder="Enter Your Mobile Number" name="Phone" style="width: 260px; height:40px ;"></td>
         </tr>
         <tr>
             <td>MAIL-ID:</td>
-            <td><input type="text" placeholder="Enter Your Mail-Id" name="Mail"  style="width: 200px; height:25px ;"></td>
+            <td><input type="text" placeholder="Enter Your Mail-Id" name="Mail" style="width: 260px; height:40px ;"></td>
         </tr>
         <tr>
             <td>EVENTS:</td>
             <td>
-            <select input type="text" name="Events"  style="width: 200px; height:25px ;">
+            <select input type="text" name="Events"style="width: 260px; height:40px ;">
                 <option>--Select Option--</option>
                 <option>Birthday</option>
                 <option>Reception</option>
@@ -127,24 +150,25 @@
         </tr>
         <tr>
             <td>LOCATION:</td>
-            <td><input type="text"id="location"name="Location" placeholder="Location"  style="width: 200px; height:25px ;"></td>
+            <td><textarea name="Location" cols="30" rows="5" placeholder="Location"></textarea></td>
         </tr>
         <tr>
             <td>DATE:</td>
-            <td><input type="date" placeholder="Event date" name="Date" style="width: 200px; height:25px ;" ></td>
+            <td><input type="date" placeholder="Event date" name="Date" style="width: 260px; height:40px ;"></td>
             <tr>
             <td>TIME:</td>
-            <td><input type="time" placeholder="Event time" name="Time" style="width: 200px; height:25px ;"></td>
+            <td><input type="time" placeholder="Event time" name="Time" style="width: 260px; height:40px ;"></td>
             </tr>
         </tr>
     </table>
-    <table>
-        <tr>
-            
-            <td class="subres"> <input type="Submit" value="Submit" style="width: 70px;height: 30px;"> </td><br>
-            <td class="subres"> <input type="Reset" value="Reset" style="width: 70px;height: 30px;"> </td>
-       </tr>
-    </table>
+    <div>
+        <button onsubmit="sendmail(); reset(); return false;" id="book-now" type="Submit" class="subres">Book Now</button>
+        <button type="Reset" class="subres">Reset</button>
+    </div>
+    <div id="booking-success" class="pop-up">
+        <h2>Booking Successful !</h2>
+        <h3>Enjoy Your DJ Party..!!!</h3>
+    </div>
 </form>
 </header>
 </div>
@@ -156,7 +180,7 @@
         <h3>We'll make your next celebration very special..!</h3><br><br>
     </center>
         <p>RAAKI CREW is a well estabilshed Wedding planning,Artist Management and Event Management Company.</p><br>
-        <p style="padding-right: 66px;">Our quality services include all kinds of party planning services, roadshows, award functions hosing, etc</p>.<br>
+        <p style="padding-right: 66px;">Our quality services include all kinds of party planning services, roadshows, award functions hosing, etc</p><br>
         <p style="padding-right: 85px;">As an Event Management company we organize all kinds of events whether personal or corporate, providing complete wedding planner services which include hosting royal weddings, beach weddings, etc.</p><br>
         <p style="padding-right: 85px;"> We offer you perfect wedding venues in Tamilnadu with attractive and cost-effective packages.</p>
     
@@ -240,10 +264,9 @@
         <button type="submit" class="btn-submit">Submit Feedback</button>
     </div>
 </div>
-
-<div class="copyrights">
+    <div class="copyrights">
     <p>&copy;Copyright @ 2024, RAAKICREW. All Rights Reserve.</p>
-</div>
+    </div>
     
 </body>
 </html>
